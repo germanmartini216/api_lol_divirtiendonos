@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <div class="card">
                 <div class="card-image">
                     <img src="${champion.imagen}" class="responsive-img" alt="${champion.nombre}">
-                    <span class="card-title">${champion.nombre.toUpperCase()}</span>
+                    <span class="card-title amber-text">${champion.nombre.toUpperCase()}</span>
                 </div>
             </div>
         </div>
