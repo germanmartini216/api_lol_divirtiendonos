@@ -32,6 +32,17 @@ app.get("/api/champions/:id", (req, res) => {
     }
 });
 
+// Obtener campeones por nombre
+app.get("/api/champions/nombre/:nombre", (req, res) => {
+    const nombre = req.params.nombre.toLowerCase();
+    const championsPorNombre = champions.filter(c => c.nombre.toLowerCase().includes(nombre));
+    if (championsPorNombre.length > 0) {
+        res.json(championsPorNombre);
+    } else {
+        res.status(404).json({ mensaje: "No se encontraron campeones con ese nombre" });
+    }
+});
+
 // Obtener campeones por línea
 app.get("/api/champions/linea/:linea", (req, res) => {
     const linea = req.params.linea.toLowerCase();
@@ -46,24 +57,18 @@ app.get("/api/champions/rol/:rol", (req, res) => {
     res.json(championsPorRol);
 });
 
-// Obtener campeones por dificultad
+// Obtener campeones por dificultad de uso
 app.get("/api/champions/dificultad/:dificultad", (req, res) => {
     const dificultad = req.params.dificultad.toLowerCase();
     const championsPorDificultad = champions.filter(c => c.dificultad_uso.toLowerCase() === dificultad);
     res.json(championsPorDificultad);
 });
-// Obtener campeones por región
-app.get("/api/champions/region/:region", (req, res) => {
-    const region = req.params.region.toLowerCase();
-    const championsPorRegion = champions.filter(c => c.region.toLowerCase() === region);
-    res.json(championsPorRegion);
-});
 
-// Obtener campeones por tipo de daño
-app.get("/api/champions/tipo-dano/:tipoDano", (req, res) => {
-    const tipoDano = req.params.tipoDano.toLowerCase();
-    const championsPorTipoDano = champions.filter(c => c.tipo_dano.toLowerCase() === tipoDano);
-    res.json(championsPorTipoDano);
+// Obtener campeones por origen
+app.get("/api/champions/origen/:origen", (req, res) => {
+    const origen = req.params.origen.toLowerCase();
+    const championsPorOrigen = champions.filter(c => c.origen.toLowerCase() === origen);
+    res.json(championsPorOrigen);
 });
 
 // Obtener campeones por recurso
@@ -71,26 +76,6 @@ app.get("/api/champions/recurso/:recurso", (req, res) => {
     const recurso = req.params.recurso.toLowerCase();
     const championsPorRecurso = champions.filter(c => c.recurso.toLowerCase() === recurso);
     res.json(championsPorRecurso);
-});
-
-// Obtener campeones por rango de ataque
-app.get("/api/champions/rango-ataque/:rangoAtaque", (req, res) => {
-    const rangoAtaque = req.params.rangoAtaque.toLowerCase();
-    const championsPorRangoAtaque = champions.filter(c => c.rango_ataque.toLowerCase() === rangoAtaque);
-    res.json(championsPorRangoAtaque);
-});
-
-// Obtener campeones por año de lanzamiento
-app.get("/api/champions/año-lanzamiento/:año", (req, res) => {
-    const año = parseInt(req.params.año);
-    const championsPorAño = champions.filter(c => new Date(c.fecha_lanzamiento).getFullYear() === ano);
-    res.json(championsPorAño);
-});
-// Obtener campeones por imagen
-app.get("/api/champions/imagen/:imagen", (req, res) => {
-    const imagen = req.params.imagen.toLowerCase();
-    const championsPorImagen = champions.filter(c => c.imagen.toLowerCase().includes(imagen));
-    res.json(championsPorImagen);
 });
 
 const port = process.env.PORT || 3000;
