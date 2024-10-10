@@ -1,0 +1,1393 @@
+{
+    "champions": [
+      {
+        "id": 1,
+        "nombre": "Aatrox",
+        "imagen": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/db39563458aa28c3f3aa8990f2c964a0f7645097-496x560.jpg?auto=format&fit=fill&q=80&w=352",
+        "origen": "Darkin",
+        "recurso": "Furia",
+        "lineas": ["Top"],
+        "roles": ["Luchador", "Tanque"],
+        "dificultad_uso": "Moderada"
+      },
+      {
+        "id": 2,
+        "nombre": "Ahri",
+        "imagen": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/55e7e901b1f69d72804665cfbeb1f4f59c8fa877-496x560.jpg?auto=format&fit=fill&q=80&w=461",
+        "origen": "Vastaya",
+        "recurso": "Maná",
+        "lineas": ["Mid"],
+        "roles": ["Mago", "Asesino"],
+        "dificultad_uso": "Fácil"
+      },
+      {
+        "id": 3,
+        "nombre": "Akali",
+        "imagen": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/abbd173df157f943496abb0638add119f753e3b2-496x560.jpg?auto=format&fit=fill&q=80&w=461",
+        "origen": "Jonio",
+        "recurso": "Energía",
+        "lineas": ["Mid", "Top"],
+        "roles": ["Asesino"],
+        "dificultad_uso": "Alta"
+      },
+      {
+        "id": 4,
+        "nombre": "Alistar",
+        "imagen": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/9e5ea58123ac5a699700eec49f8412af11e563a0-496x560.jpg?auto=format&fit=fill&q=80&w=461",
+        "origen": "Vastaya",
+        "recurso": "Maná",
+        "lineas": ["Soporte"],
+        "roles": ["Tanque", "Soporte"],
+        "dificultad_uso": "Moderada"
+      },
+      {
+        "id": 5,
+        "nombre": "Amumu",
+        "imagen": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/da8cefee5b85bca51360ccc1635ef5b0f6967767-496x560.jpg?auto=format&fit=fill&q=80&w=461",
+        "origen": "Shurima",
+        "recurso": "Maná",
+        "lineas": ["Jungla"],
+        "roles": ["Tanque", "Mago"],
+        "dificultad_uso": "Fácil"
+      },
+      {
+        "id": 6,
+        "nombre": "Anivia",
+        "imagen": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/092febba8905cff35940d036fd20b7e3ad4f428f-496x560.jpg?auto=format&fit=fill&q=80&w=461",
+        "origen": "Freljord",
+        "recurso": "Maná",
+        "lineas": ["Mid"],
+        "roles": ["Mago"],
+        "dificultad_uso": "Alta"
+      },
+      {
+        "id": 7,
+        "nombre": "Annie",
+        "imagen": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/b9081057a6282c7c7f074dc9cec094b8d51df9bf-496x560.jpg?auto=format&fit=fill&q=80&w=461",
+        "origen": "Runaterra",
+        "recurso": "Maná",
+        "lineas": ["Mid", "Soporte"],
+        "roles": ["Mago"],
+        "dificultad_uso": "Fácil"
+      },
+      {
+        "id": 8,
+        "nombre": "Aphelios",
+        "imagen": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/220684b035ca0a0dc0d93c17ee058872d7c2a4e9-496x560.jpg?auto=format&fit=fill&q=80&w=461",
+        "origen": "Targon",
+        "recurso": "Maná",
+        "lineas": ["Bot"],
+        "roles": ["Tirador"],
+        "dificultad_uso": "Alta"
+      },
+      {
+        "id": 9,
+        "nombre": "Ashe",
+        "imagen": "https://example.com/images/ashe.png",
+        "origen": "Freljord",
+        "recurso": "Maná",
+        "lineas": ["Bot"],
+        "roles": ["Tirador"],
+        "dificultad_uso": "Fácil"
+      },
+      {
+        "id": 10,
+        "nombre": "Aurelion Sol",
+        "imagen": "https://example.com/images/aurelion_sol.png",
+        "origen": "Targon",
+        "recurso": "Maná",
+        "lineas": ["Mid"],
+        "roles": ["Mago"],
+        "dificultad_uso": "Alta"
+      },
+      {
+        "id": 11,
+        "nombre": "Azir",
+        "imagen": "https://example.com/images/azir.png",
+        "origen": "Shurima",
+        "recurso": "Maná",
+        "lineas": ["Mid"],
+        "roles": ["Mago"],
+        "dificultad_uso": "Alta"
+      },
+      {
+        "id": 12,
+        "nombre": "Bard",
+        "imagen": "https://example.com/images/bard.png",
+        "origen": "Runaterra",
+        "recurso": "Maná",
+        "lineas": ["Soporte"],
+        "roles": ["Soporte", "Mago"],
+        "dificultad_uso": "Alta"
+      },
+      {
+        "id": 13,
+        "nombre": "Blitzcrank",
+        "imagen": "https://example.com/images/blitzcrank.png",
+        "origen": "Zaun",
+        "recurso": "Maná",
+        "lineas": ["Soporte"],
+        "roles": ["Tanque", "Soporte"],
+        "dificultad_uso": "Fácil"
+      },
+      {
+        "id": 14,
+        "nombre": "Brand",
+        "imagen": "https://example.com/images/brand.png",
+        "origen": "Runaterra",
+        "recurso": "Maná",
+        "lineas": ["Mid", "Soporte"],
+        "roles": ["Mago"],
+        "dificultad_uso": "Moderada"
+      },
+      {
+        "id": 15,
+        "nombre": "Braum",
+        "imagen": "https://example.com/images/braum.png",
+        "origen": "Freljord",
+        "recurso": "Maná",
+        "lineas": ["Soporte"],
+        "roles": ["Tanque", "Soporte"],
+        "dificultad_uso": "Moderada"
+      },
+      {
+        "id": 16,
+        "nombre": "Caitlyn",
+        "imagen": "https://example.com/images/caitlyn.png",
+        "origen": "Piltover",
+        "recurso": "Maná",
+        "lineas": ["Bot"],
+        "roles": ["Tirador"],
+        "dificultad_uso": "Fácil"
+      },
+      {
+        "id": 17,
+        "nombre": "Camille",
+        "imagen": "https://example.com/images/camille.png",
+        "origen": "Piltover",
+        "recurso": "Maná",
+        "lineas": ["Top"],
+        "roles": ["Luchador", "Asesino"],
+        "dificultad_uso": "Alta"
+      },
+      {
+        "id": 18,
+        "nombre": "Cassiopeia",
+        "imagen": "https://example.com/images/cassiopeia.png",
+        "origen": "Noxus",
+        "recurso": "Maná",
+        "lineas": ["Mid"],
+        "roles": ["Mago"],
+        "dificultad_uso": "Alta"
+      },
+      {
+        "id": 19,
+        "nombre": "Cho'Gath",
+        "imagen": "https://example.com/images/chogath.png",
+        "origen": "El Vacío",
+        "recurso": "Maná",
+        "lineas": ["Top", "Mid"],
+        "roles": ["Tanque", "Mago"],
+        "dificultad_uso": "Moderada"
+      },
+      {
+        "id": 20,
+        "nombre": "Corki",
+        "imagen": "https://example.com/images/corki.png",
+        "origen": "Piltover",
+        "recurso": "Maná",
+        "lineas": ["Mid", "Bot"],
+        "roles": ["Tirador", "Mago"],
+        "dificultad_uso": "Moderada"
+      },
+      {
+        "id": 21,
+        "nombre": "Darius",
+        "imagen": "https://example.com/images/darius.png",
+        "origen": "Noxus",
+        "recurso": "Maná",
+        "lineas": ["Top"],
+        "roles": ["Luchador", "Tanque"],
+        "dificultad_uso": "Fácil"
+      },
+      {
+        "id": 22,
+        "nombre": "Diana",
+        "imagen": "https://example.com/images/diana.png",
+        "origen": "Targon",
+        "recurso": "Maná",
+        "lineas": ["Mid", "Jungla"],
+        "roles": ["Asesino", "Luchador"],
+        "dificultad_uso": "Moderada"
+      },
+      {
+        "id": 23,
+        "nombre": "Dr. Mundo",
+        "imagen": "https://example.com/images/dr_mundo.png",
+        "origen": "Zaun",
+        "recurso": "Salud",
+        "lineas": ["Top", "Jungla"],
+        "roles": ["Tanque"],
+        "dificultad_uso": "Fácil"
+      },
+      {
+        "id": 24,
+        "nombre": "Draven",
+        "imagen": "https://example.com/images/draven.png",
+        "origen": "Noxus",
+        "recurso": "Maná",
+        "lineas": ["Bot"],
+        "roles": ["Tirador"],
+        "dificultad_uso": "Alta"
+      },
+      {
+        "id": 25,
+        "nombre": "Ekko",
+        "imagen": "https://example.com/images/ekko.png",
+        "origen": "Zaun",
+        "recurso": "Maná",
+        "lineas": ["Mid", "Jungla"],
+        "roles": ["Asesino", "Mago"],
+        "dificultad_uso": "Alta"
+      },
+      {
+        "id": 26,
+        "nombre": "Elise",
+        "imagen": "https://example.com/images/elise.png",
+        "origen": "El Vacío",
+        "recurso": "Maná",
+        "lineas": ["Jungla"],
+        "roles": ["Mago", "Luchador"],
+        "dificultad_uso": "Alta"
+      },
+      {
+        "id": 27,
+        "nombre": "Evelynn",
+        "imagen": "https://example.com/images/evelynn.png",
+        "origen": "Runaterra",
+        "recurso": "Maná",
+        "lineas": ["Jungla"],
+        "roles": ["Asesino", "Mago"],
+        "dificultad_uso": "Alta"
+      },
+      {
+        "id": 28,
+        "nombre": "Ezreal",
+        "imagen": "https://example.com/images/ezreal.png",
+        "origen": "Piltover",
+        "recurso": "Maná",
+        "lineas": ["Bot", "Mid"],
+        "roles": ["Tirador", "Mago"],
+        "dificultad_uso": "Moderada"
+      },
+      {
+        "id": 29,
+        "nombre": "Fiddlesticks",
+        "imagen": "https://example.com/images/fiddlesticks.png",
+        "origen": "Desconocido",
+        "recurso": "Maná",
+        "lineas": ["Jungla", "Soporte"],
+        "roles": ["Mago", "Tanque"],
+        "dificultad_uso": "Moderada"
+      },
+      {
+        "id": 30,
+        "nombre": "Fiora",
+        "imagen": "https://example.com/images/fiora.png",
+        "origen": "Demacia",
+        "recurso": "Maná",
+        "lineas": ["Top"],
+        "roles": ["Luchador", "Asesino"],
+        "dificultad_uso": "Alta"
+      },
+      {
+        "id": 31,
+        "nombre": "Fizz",
+        "imagen": "https://example.com/images/fizz.png",
+        "origen": "Aguas Estancadas",
+        "recurso": "Maná",
+        "lineas": ["Mid"],
+        "roles": ["Asesino", "Mago"],
+        "dificultad_uso": "Moderada"
+      },{
+        "id": 32,
+        "nombre": "Galio",
+        "imagen": "https://example.com/images/galio.png",
+        "origen": "Demacia",
+        "recurso": "Maná",
+        "lineas": ["Mid", "Soporte"],
+        "roles": ["Tanque", "Mago"],
+        "dificultad_uso": "Moderada"
+      },
+      {
+        "id": 33,
+        "nombre": "Gangplank",
+        "imagen": "https://example.com/images/gangplank.png",
+        "origen": "Aguas Estancadas",
+        "recurso": "Maná",
+        "lineas": ["Top"],
+        "roles": ["Luchador"],
+        "dificultad_uso": "Alta"
+      },
+      {
+        "id": 34,
+        "nombre": "Garen",
+        "imagen": "https://example.com/images/garen.png",
+        "origen": "Demacia",
+        "recurso": "Sin recurso",
+        "lineas": ["Top"],
+        "roles": ["Luchador", "Tanque"],
+        "dificultad_uso": "Fácil"
+      },
+      {
+        "id": 35,
+        "nombre": "Gnar",
+        "imagen": "https://example.com/images/gnar.png",
+        "origen": "Freljord",
+        "recurso": "Furia",
+        "lineas": ["Top"],
+        "roles": ["Luchador", "Tanque"],
+        "dificultad_uso": "Alta"
+      },
+      {
+        "id": 36,
+        "nombre": "Gragas",
+        "imagen": "https://example.com/images/gragas.png",
+        "origen": "Freljord",
+        "recurso": "Maná",
+        "lineas": ["Jungla", "Top"],
+        "roles": ["Tanque", "Mago"],
+        "dificultad_uso": "Moderada"
+      },
+      {
+        "id": 37,
+        "nombre": "Graves",
+        "imagen": "https://example.com/images/graves.png",
+        "origen": "Aguas Estancadas",
+        "recurso": "Maná",
+        "lineas": ["Jungla", "Bot"],
+        "roles": ["Tirador", "Luchador"],
+        "dificultad_uso": "Moderada"
+      },
+      {
+        "id": 38,
+        "nombre": "Gwen",
+        "imagen": "https://example.com/images/gwen.png",
+        "origen": "Islas de la Sombra",
+        "recurso": "Maná",
+        "lineas": ["Top"],
+        "roles": ["Luchador"],
+        "dificultad_uso": "Alta"
+      },
+      {
+        "id": 39,
+        "nombre": "Hecarim",
+        "imagen": "https://example.com/images/hecarim.png",
+        "origen": "Islas de la Sombra",
+        "recurso": "Maná",
+        "lineas": ["Jungla"],
+        "roles": ["Tanque", "Luchador"],
+        "dificultad_uso": "Moderada"
+      },
+      {
+        "id": 40,
+        "nombre": "Heimerdinger",
+        "imagen": "https://example.com/images/heimerdinger.png",
+        "origen": "Piltover",
+        "recurso": "Maná",
+        "lineas": ["Mid", "Soporte"],
+        "roles": ["Mago"],
+        "dificultad_uso": "Alta"
+      },
+      {
+        "id": 41,
+        "nombre": "Illaoi",
+        "imagen": "https://example.com/images/illaoi.png",
+        "origen": "Aguas Estancadas",
+        "recurso": "Maná",
+        "lineas": ["Top"],
+        "roles": ["Luchador"],
+        "dificultad_uso": "Moderada"
+      },{
+        "id": 42,
+        "nombre": "Irelia",
+        "imagen": "https://example.com/images/irelia.png",
+        "origen": "Jonia",
+        "recurso": "Maná",
+        "lineas": ["Top", "Mid"],
+        "roles": ["Luchador", "Asesino"],
+        "dificultad_uso": "Alta"
+      },
+      {
+        "id": 43,
+        "nombre": "Ivern",
+        "imagen": "https://example.com/images/ivern.png",
+        "origen": "Runaterra",
+        "recurso": "Maná",
+        "lineas": ["Jungla"],
+        "roles": ["Soporte", "Mago"],
+        "dificultad_uso": "Moderada"
+      },
+      {
+        "id": 44,
+        "nombre": "Janna",
+        "imagen": "https://example.com/images/janna.png",
+        "origen": "Zaun",
+        "recurso": "Maná",
+        "lineas": ["Soporte"],
+        "roles": ["Soporte", "Mago"],
+        "dificultad_uso": "Fácil"
+      },
+      {
+        "id": 45,
+        "nombre": "Jarvan IV",
+        "imagen": "https://example.com/images/jarvan.png",
+        "origen": "Demacia",
+        "recurso": "Maná",
+        "lineas": ["Jungla", "Top"],
+        "roles": ["Tanque", "Luchador"],
+        "dificultad_uso": "Moderada"
+      },
+      {
+        "id": 46,
+        "nombre": "Jax",
+        "imagen": "https://example.com/images/jax.png",
+        "origen": "Runaterra",
+        "recurso": "Maná",
+        "lineas": ["Top", "Jungla"],
+        "roles": ["Luchador", "Asesino"],
+        "dificultad_uso": "Moderada"
+      },
+      {
+        "id": 47,
+        "nombre": "Jayce",
+        "imagen": "https://example.com/images/jayce.png",
+        "origen": "Piltover",
+        "recurso": "Maná",
+        "lineas": ["Top", "Mid"],
+        "roles": ["Luchador", "Tirador"],
+        "dificultad_uso": "Alta"
+      },
+      {
+        "id": 48,
+        "nombre": "Jhin",
+        "imagen": "https://example.com/images/jhin.png",
+        "origen": "Jonía",
+        "recurso": "Maná",
+        "lineas": ["Bot"],
+        "roles": ["Tirador"],
+        "dificultad_uso": "Moderada"
+      },
+      {
+        "id": 49,
+        "nombre": "Jinx",
+        "imagen": "https://example.com/images/jinx.png",
+        "origen": "Zaun",
+        "recurso": "Maná",
+        "lineas": ["Bot"],
+        "roles": ["Tirador"],
+        "dificultad_uso": "Fácil"
+      },
+      {
+        "id": 50,
+        "nombre": "Kai'Sa",
+        "imagen": "https://example.com/images/kaisa.png",
+        "origen": "El Vacío",
+        "recurso": "Maná",
+        "lineas": ["Bot"],
+        "roles": ["Tirador", "Asesino"],
+        "dificultad_uso": "Moderada"
+      },
+      {
+        "id": 51,
+        "nombre": "Kalista",
+        "imagen": "https://example.com/images/kalista.png",
+        "origen": "Islas de la Sombra",
+        "recurso": "Maná",
+        "lineas": ["Bot"],
+        "roles": ["Tirador"],
+        "dificultad_uso": "Alta"
+      },{
+        "id": 52,
+        "nombre": "Karma",
+        "imagen": "https://example.com/images/karma.png",
+        "origen": "Jonia",
+        "recurso": "Maná",
+        "lineas": ["Mid", "Soporte"],
+        "roles": ["Soporte", "Mago"],
+        "dificultad_uso": "Moderada"
+      },
+      {
+        "id": 53,
+        "nombre": "Karthus",
+        "imagen": "https://example.com/images/karthus.png",
+        "origen": "Islas de la Sombra",
+        "recurso": "Maná",
+        "lineas": ["Mid", "Jungla"],
+        "roles": ["Mago"],
+        "dificultad_uso": "Alta"
+      },
+      {
+        "id": 54,
+        "nombre": "Kassadin",
+        "imagen": "https://example.com/images/kassadin.png",
+        "origen": "El Vacío",
+        "recurso": "Maná",
+        "lineas": ["Mid"],
+        "roles": ["Asesino", "Mago"],
+        "dificultad_uso": "Alta"
+      },
+      {
+        "id": 55,
+        "nombre": "Katarina",
+        "imagen": "https://example.com/images/katarina.png",
+        "origen": "Noxus",
+        "recurso": "Sin recurso",
+        "lineas": ["Mid"],
+        "roles": ["Asesino", "Mago"],
+        "dificultad_uso": "Alta"
+      },
+      {
+        "id": 56,
+        "nombre": "Kayle",
+        "imagen": "https://example.com/images/kayle.png",
+        "origen": "Demacia",
+        "recurso": "Maná",
+        "lineas": ["Top", "Mid"],
+        "roles": ["Luchador", "Mago"],
+        "dificultad_uso": "Moderada"
+      },
+      {
+        "id": 57,
+        "nombre": "Kayn",
+        "imagen": "https://example.com/images/kayn.png",
+        "origen": "Jonía",
+        "recurso": "Maná",
+        "lineas": ["Jungla"],
+        "roles": ["Asesino", "Luchador"],
+        "dificultad_uso": "Alta"
+      },
+      {
+        "id": 58,
+        "nombre": "Kennen",
+        "imagen": "https://example.com/images/kennen.png",
+        "origen": "Jonia",
+        "recurso": "Energía",
+        "lineas": ["Top", "Mid"],
+        "roles": ["Mago", "Luchador"],
+        "dificultad_uso": "Moderada"
+      },
+      {
+        "id": 59,
+        "nombre": "Kha'Zix",
+        "imagen": "https://example.com/images/khazix.png",
+        "origen": "El Vacío",
+        "recurso": "Maná",
+        "lineas": ["Jungla"],
+        "roles": ["Asesino"],
+        "dificultad_uso": "Alta"
+      },
+      {
+        "id": 60,
+        "nombre": "Kindred",
+        "imagen": "https://example.com/images/kindred.png",
+        "origen": "Runaterra",
+        "recurso": "Maná",
+        "lineas": ["Jungla"],
+        "roles": ["Tirador"],
+        "dificultad_uso": "Moderada"
+      },
+      {
+        "id": 61,
+        "nombre": "Kled",
+        "imagen": "https://example.com/images/kled.png",
+        "origen": "Noxus",
+        "recurso": "Bravura",
+        "lineas": ["Top"],
+        "roles": ["Luchador", "Tanque"],
+        "dificultad_uso": "Alta"
+      },{
+        "id": 62,
+        "nombre": "Kog'Maw",
+        "imagen": "https://example.com/images/kogmaw.png",
+        "origen": "El Vacío",
+        "recurso": "Maná",
+        "lineas": ["Bot"],
+        "roles": ["Tirador"],
+        "dificultad_uso": "Moderada"
+      },
+      {
+        "id": 63,
+        "nombre": "LeBlanc",
+        "imagen": "https://example.com/images/leblanc.png",
+        "origen": "Noxus",
+        "recurso": "Maná",
+        "lineas": ["Mid"],
+        "roles": ["Asesino", "Mago"],
+        "dificultad_uso": "Alta"
+      },
+      {
+        "id": 64,
+        "nombre": "Lee Sin",
+        "imagen": "https://example.com/images/leesin.png",
+        "origen": "Jonia",
+        "recurso": "Energía",
+        "lineas": ["Jungla"],
+        "roles": ["Luchador", "Asesino"],
+        "dificultad_uso": "Alta"
+      },
+      {
+        "id": 65,
+        "nombre": "Leona",
+        "imagen": "https://example.com/images/leona.png",
+        "origen": "Monte Targon",
+        "recurso": "Maná",
+        "lineas": ["Soporte"],
+        "roles": ["Tanque", "Soporte"],
+        "dificultad_uso": "Moderada"
+      },
+      {
+        "id": 66,
+        "nombre": "Lillia",
+        "imagen": "https://example.com/images/lillia.png",
+        "origen": "Ionia",
+        "recurso": "Maná",
+        "lineas": ["Jungla"],
+        "roles": ["Luchador", "Mago"],
+        "dificultad_uso": "Alta"
+      },
+      {
+        "id": 67,
+        "nombre": "Lissandra",
+        "imagen": "https://example.com/images/lissandra.png",
+        "origen": "Freljord",
+        "recurso": "Maná",
+        "lineas": ["Mid"],
+        "roles": ["Mago"],
+        "dificultad_uso": "Moderada"
+      },
+      {
+        "id": 68,
+        "nombre": "Lucian",
+        "imagen": "https://example.com/images/lucian.png",
+        "origen": "Demacia",
+        "recurso": "Maná",
+        "lineas": ["Bot"],
+        "roles": ["Tirador"],
+        "dificultad_uso": "Fácil"
+      },
+      {
+        "id": 69,
+        "nombre": "Lulu",
+        "imagen": "https://example.com/images/lulu.png",
+        "origen": "Bandile",
+        "recurso": "Maná",
+        "lineas": ["Soporte"],
+        "roles": ["Soporte", "Mago"],
+        "dificultad_uso": "Fácil"
+      },
+      {
+        "id": 70,
+        "nombre": "Lux",
+        "imagen": "https://example.com/images/lux.png",
+        "origen": "Demacia",
+        "recurso": "Maná",
+        "lineas": ["Mid", "Soporte"],
+        "roles": ["Mago", "Soporte"],
+        "dificultad_uso": "Fácil"
+      },
+      {
+        "id": 71,
+        "nombre": "Malphite",
+        "imagen": "https://example.com/images/malphite.png",
+        "origen": "Ixtal",
+        "recurso": "Maná",
+        "lineas": ["Top", "Jungla"],
+        "roles": ["Tanque", "Mago"],
+        "dificultad_uso": "Moderada"
+      }, {
+        "id": 72,
+        "nombre": "Malzahar",
+        "imagen": "https://example.com/images/malzahar.png",
+        "origen": "Shurima",
+        "recurso": "Maná",
+        "lineas": ["Mid"],
+        "roles": ["Mago"],
+        "dificultad_uso": "Moderada"
+      },
+      {
+        "id": 73,
+        "nombre": "Maokai",
+        "imagen": "https://example.com/images/maokai.png",
+        "origen": "Islas de la Sombra",
+        "recurso": "Maná",
+        "lineas": ["Top", "Soporte"],
+        "roles": ["Tanque", "Mago"],
+        "dificultad_uso": "Moderada"
+      },
+      {
+        "id": 74,
+        "nombre": "Master Yi",
+        "imagen": "https://example.com/images/masteryi.png",
+        "origen": "Jonia",
+        "recurso": "Maná",
+        "lineas": ["Jungla"],
+        "roles": ["Asesino", "Luchador"],
+        "dificultad_uso": "Fácil"
+      },
+      {
+        "id": 75,
+        "nombre": "Miss Fortune",
+        "imagen": "https://example.com/images/missfortune.png",
+        "origen": "Aguas Estancadas",
+        "recurso": "Maná",
+        "lineas": ["Bot"],
+        "roles": ["Tirador"],
+        "dificultad_uso": "Fácil"
+      },
+      {
+        "id": 76,
+        "nombre": "Mordekaiser",
+        "imagen": "https://example.com/images/mordekaiser.png",
+        "origen": "Noxus",
+        "recurso": "Escudo",
+        "lineas": ["Top"],
+        "roles": ["Luchador", "Tanque"],
+        "dificultad_uso": "Moderada"
+      },
+      {
+        "id": 77,
+        "nombre": "Morgana",
+        "imagen": "https://example.com/images/morgana.png",
+        "origen": "Demacia",
+        "recurso": "Maná",
+        "lineas": ["Soporte", "Mid"],
+        "roles": ["Soporte", "Mago"],
+        "dificultad_uso": "Fácil"
+      },
+      {
+        "id": 78,
+        "nombre": "Nami",
+        "imagen": "https://example.com/images/nami.png",
+        "origen": "Aguas Estancadas",
+        "recurso": "Maná",
+        "lineas": ["Soporte"],
+        "roles": ["Soporte", "Mago"],
+        "dificultad_uso": "Moderada"
+      },
+      {
+        "id": 79,
+        "nombre": "Nasus",
+        "imagen": "https://example.com/images/nasus.png",
+        "origen": "Shurima",
+        "recurso": "Maná",
+        "lineas": ["Top"],
+        "roles": ["Luchador", "Tanque"],
+        "dificultad_uso": "Fácil"
+      },
+      {
+        "id": 80,
+        "nombre": "Nautilus",
+        "imagen": "https://example.com/images/nautilus.png",
+        "origen": "Aguas Estancadas",
+        "recurso": "Maná",
+        "lineas": ["Soporte"],
+        "roles": ["Tanque", "Soporte"],
+        "dificultad_uso": "Moderada"
+      },
+      {
+        "id": 81,
+        "nombre": "Neeko",
+        "imagen": "https://example.com/images/neeko.png",
+        "origen": "Ixtal",
+        "recurso": "Maná",
+        "lineas": ["Mid", "Soporte"],
+        "roles": ["Mago"],
+        "dificultad_uso": "Moderada"
+      }, {
+        "id": 82,
+        "nombre": "Nidalee",
+        "imagen": "https://example.com/images/nidalee.png",
+        "origen": "Shurima",
+        "recurso": "Maná",
+        "lineas": ["Jungla", "Mid"],
+        "roles": ["Asesino", "Mago"],
+        "dificultad_uso": "Alta"
+      },
+      {
+        "id": 83,
+        "nombre": "Nocturne",
+        "imagen": "https://example.com/images/nocturne.png",
+        "origen": "Runaterra",
+        "recurso": "Maná",
+        "lineas": ["Jungla"],
+        "roles": ["Asesino", "Luchador"],
+        "dificultad_uso": "Moderada"
+      },
+      {
+        "id": 84,
+        "nombre": "Nunu & Willump",
+        "imagen": "https://example.com/images/nunu.png",
+        "origen": "Freljord",
+        "recurso": "Maná",
+        "lineas": ["Jungla"],
+        "roles": ["Tanque", "Soporte"],
+        "dificultad_uso": "Fácil"
+      },
+      {
+        "id": 85,
+        "nombre": "Olaf",
+        "imagen": "https://example.com/images/olaf.png",
+        "origen": "Freljord",
+        "recurso": "Furia",
+        "lineas": ["Top", "Jungla"],
+        "roles": ["Luchador", "Tanque"],
+        "dificultad_uso": "Moderada"
+      },
+      {
+        "id": 86,
+        "nombre": "Orianna",
+        "imagen": "https://example.com/images/orianna.png",
+        "origen": "Piltover",
+        "recurso": "Maná",
+        "lineas": ["Mid"],
+        "roles": ["Mago"],
+        "dificultad_uso": "Alta"
+      },
+      {
+        "id": 87,
+        "nombre": "Ornn",
+        "imagen": "https://example.com/images/ornn.png",
+        "origen": "Freljord",
+        "recurso": "Maná",
+        "lineas": ["Top"],
+        "roles": ["Tanque", "Luchador"],
+        "dificultad_uso": "Moderada"
+      },
+      {
+        "id": 88,
+        "nombre": "Pantheon",
+        "imagen": "https://example.com/images/pantheon.png",
+        "origen": "Monte Targon",
+        "recurso": "Maná",
+        "lineas": ["Top", "Jungla"],
+        "roles": ["Luchador", "Asesino"],
+        "dificultad_uso": "Moderada"
+      },
+      {
+        "id": 89,
+        "nombre": "Poppy",
+        "imagen": "https://example.com/images/poppy.png",
+        "origen": "Demacia",
+        "recurso": "Maná",
+        "lineas": ["Top", "Jungla"],
+        "roles": ["Tanque", "Luchador"],
+        "dificultad_uso": "Fácil"
+      },
+      {
+        "id": 90,
+        "nombre": "Pyke",
+        "imagen": "https://example.com/images/pyke.png",
+        "origen": "Aguas Estancadas",
+        "recurso": "Maná",
+        "lineas": ["Soporte"],
+        "roles": ["Asesino", "Soporte"],
+        "dificultad_uso": "Alta"
+      },
+      {
+        "id": 91,
+        "nombre": "Qiyana",
+        "imagen": "https://example.com/images/qiyana.png",
+        "origen": "Ixtal",
+        "recurso": "Maná",
+        "lineas": ["Mid"],
+        "roles": ["Asesino", "Luchador"],
+        "dificultad_uso": "Alta"
+      }, {
+        "id": 92,
+        "nombre": "Quinn",
+        "imagen": "https://example.com/images/quinn.png",
+        "origen": "Demacia",
+        "recurso": "Maná",
+        "lineas": ["Top", "Bot"],
+        "roles": ["Tirador", "Asesino"],
+        "dificultad_uso": "Moderada"
+      },
+      {
+        "id": 93,
+        "nombre": "Rakan",
+        "imagen": "https://example.com/images/rakan.png",
+        "origen": "Jonia",
+        "recurso": "Maná",
+        "lineas": ["Soporte"],
+        "roles": ["Soporte"],
+        "dificultad_uso": "Moderada"
+      },
+      {
+        "id": 94,
+        "nombre": "Rammus",
+        "imagen": "https://example.com/images/rammus.png",
+        "origen": "Shurima",
+        "recurso": "Maná",
+        "lineas": ["Jungla"],
+        "roles": ["Tanque"],
+        "dificultad_uso": "Fácil"
+      },
+      {
+        "id": 95,
+        "nombre": "Rek'Sai",
+        "imagen": "https://example.com/images/reksai.png",
+        "origen": "El Vacío",
+        "recurso": "Furia",
+        "lineas": ["Jungla"],
+        "roles": ["Luchador", "Asesino"],
+        "dificultad_uso": "Moderada"
+      },
+      {
+        "id": 96,
+        "nombre": "Renekton",
+        "imagen": "https://example.com/images/renekton.png",
+        "origen": "Shurima",
+        "recurso": "Furia",
+        "lineas": ["Top"],
+        "roles": ["Luchador", "Tanque"],
+        "dificultad_uso": "Fácil"
+      },
+      {
+        "id": 97,
+        "nombre": "Rengar",
+        "imagen": "https://example.com/images/rengar.png",
+        "origen": "Ixtal",
+        "recurso": "Ferocidad",
+        "lineas": ["Jungla", "Top"],
+        "roles": ["Asesino"],
+        "dificultad_uso": "Alta"
+      },
+      {
+        "id": 98,
+        "nombre": "Riven",
+        "imagen": "https://example.com/images/riven.png",
+        "origen": "Noxus",
+        "recurso": "Sin recurso",
+        "lineas": ["Top"],
+        "roles": ["Luchador"],
+        "dificultad_uso": "Alta"
+      },
+      {
+        "id": 99,
+        "nombre": "Rumble",
+        "imagen": "https://example.com/images/rumble.png",
+        "origen": "Zaun",
+        "recurso": "Calor",
+        "lineas": ["Top", "Mid"],
+        "roles": ["Mago", "Luchador"],
+        "dificultad_uso": "Moderada"
+      },
+      {
+        "id": 100,
+        "nombre": "Ryze",
+        "imagen": "https://example.com/images/ryze.png",
+        "origen": "Runaterra",
+        "recurso": "Maná",
+        "lineas": ["Mid", "Top"],
+        "roles": ["Mago"],
+        "dificultad_uso": "Alta"
+      },
+      {
+        "id": 101,
+        "nombre": "Samira",
+        "imagen": "https://example.com/images/samira.png",
+        "origen": "Shurima",
+        "recurso": "Maná",
+        "lineas": ["Bot"],
+        "roles": ["Tirador", "Asesino"],
+        "dificultad_uso": "Moderada"
+      },{
+        "id": 102,
+        "nombre": "Sejuani",
+        "imagen": "https://example.com/images/sejuani.png",
+        "origen": "Freljord",
+        "recurso": "Maná",
+        "lineas": ["Jungla"],
+        "roles": ["Tanque"],
+        "dificultad_uso": "Moderada"
+      },
+      {
+        "id": 103,
+        "nombre": "Senna",
+        "imagen": "https://example.com/images/senna.png",
+        "origen": "Demacia",
+        "recurso": "Maná",
+        "lineas": ["Bot"],
+        "roles": ["Tirador", "Soporte"],
+        "dificultad_uso": "Moderada"
+      },
+      {
+        "id": 104,
+        "nombre": "Seraphine",
+        "imagen": "https://example.com/images/seraphine.png",
+        "origen": "Piltover",
+        "recurso": "Maná",
+        "lineas": ["Mid", "Soporte"],
+        "roles": ["Mago", "Soporte"],
+        "dificultad_uso": "Fácil"
+      },
+      {
+        "id": 105,
+        "nombre": "Sett",
+        "imagen": "https://example.com/images/sett.png",
+        "origen": "Ionia",
+        "recurso": "Maná",
+        "lineas": ["Top", "Jungla"],
+        "roles": ["Luchador", "Tanque"],
+        "dificultad_uso": "Moderada"
+      },
+      {
+        "id": 106,
+        "nombre": "Shaco",
+        "imagen": "https://example.com/images/shaco.png",
+        "origen": "Ionia",
+        "recurso": "Maná",
+        "lineas": ["Jungla"],
+        "roles": ["Asesino"],
+        "dificultad_uso": "Alta"
+      },
+      {
+        "id": 107,
+        "nombre": "Shen",
+        "imagen": "https://example.com/images/shen.png",
+        "origen": "Jonia",
+        "recurso": "Energía",
+        "lineas": ["Top"],
+        "roles": ["Tanque"],
+        "dificultad_uso": "Moderada"
+      },
+      {
+        "id": 108,
+        "nombre": "Shyvana",
+        "imagen": "https://example.com/images/shyvana.png",
+        "origen": "Demacia",
+        "recurso": "Maná",
+        "lineas": ["Jungla"],
+        "roles": ["Luchador"],
+        "dificultad_uso": "Fácil"
+      },
+      {
+        "id": 109,
+        "nombre": "Sion",
+        "imagen": "https://example.com/images/sion.png",
+        "origen": "Noxus",
+        "recurso": "Maná",
+        "lineas": ["Top"],
+        "roles": ["Tanque"],
+        "dificultad_uso": "Fácil"
+      },
+      {
+        "id": 110,
+        "nombre": "Sivir",
+        "imagen": "https://example.com/images/sivir.png",
+        "origen": "Shurima",
+        "recurso": "Maná",
+        "lineas": ["Bot"],
+        "roles": ["Tirador"],
+        "dificultad_uso": "Fácil"
+      },
+      {
+        "id": 111,
+        "nombre": "Sona",
+        "imagen": "https://example.com/images/sona.png",
+        "origen": "Demacia",
+        "recurso": "Maná",
+        "lineas": ["Soporte"],
+        "roles": ["Soporte", "Mago"],
+        "dificultad_uso": "Fácil"
+      },{
+        "id": 112,
+        "nombre": "Soraka",
+        "imagen": "https://example.com/images/soraka.png",
+        "origen": "Runaterra",
+        "recurso": "Maná",
+        "lineas": ["Soporte"],
+        "roles": ["Soporte", "Sanador"],
+        "dificultad_uso": "Fácil"
+      },
+      {
+        "id": 113,
+        "nombre": "Swain",
+        "imagen": "https://example.com/images/swain.png",
+        "origen": "Noxus",
+        "recurso": "Maná",
+        "lineas": ["Mid", "Top"],
+        "roles": ["Mago", "Tanque"],
+        "dificultad_uso": "Moderada"
+      },
+      {
+        "id": 114,
+        "nombre": "Sylas",
+        "imagen": "https://example.com/images/sylas.png",
+        "origen": "Demacia",
+        "recurso": "Maná",
+        "lineas": ["Mid"],
+        "roles": ["Mago", "Luchador"],
+        "dificultad_uso": "Alta"
+      },
+      {
+        "id": 115,
+        "nombre": "Taliyah",
+        "imagen": "https://example.com/images/taliyah.png",
+        "origen": "Ixtal",
+        "recurso": "Maná",
+        "lineas": ["Mid", "Jungla"],
+        "roles": ["Mago"],
+        "dificultad_uso": "Moderada"
+      },
+      {
+        "id": 116,
+        "nombre": "Talon",
+        "imagen": "https://example.com/images/talon.png",
+        "origen": "Noxus",
+        "recurso": "Maná",
+        "lineas": ["Mid", "Jungla"],
+        "roles": ["Asesino"],
+        "dificultad_uso": "Alta"
+      },
+      {
+        "id": 117,
+        "nombre": "Taric",
+        "imagen": "https://example.com/images/taric.png",
+        "origen": "Demacia",
+        "recurso": "Maná",
+        "lineas": ["Soporte"],
+        "roles": ["Soporte", "Tanque"],
+        "dificultad_uso": "Moderada"
+      },
+      {
+        "id": 118,
+        "nombre": "Teemo",
+        "imagen": "https://example.com/images/teemo.png",
+        "origen": "Bandle City",
+        "recurso": "Maná",
+        "lineas": ["Top", "Bot"],
+        "roles": ["Tirador", "Mago"],
+        "dificultad_uso": "Fácil"
+      },
+      {
+        "id": 119,
+        "nombre": "Thresh",
+        "imagen": "https://example.com/images/thresh.png",
+        "origen": "Islas de la Sombra",
+        "recurso": "Maná",
+        "lineas": ["Soporte"],
+        "roles": ["Soporte", "Tanque"],
+        "dificultad_uso": "Alta"
+      },
+      {
+        "id": 120,
+        "nombre": "Tristana",
+        "imagen": "https://example.com/images/tristana.png",
+        "origen": "Bandle City",
+        "recurso": "Maná",
+        "lineas": ["Bot"],
+        "roles": ["Tirador"],
+        "dificultad_uso": "Fácil"
+      },
+      {
+        "id": 121,
+        "nombre": "Tryndamere",
+        "imagen": "https://example.com/images/tryndamere.png",
+        "origen": "Noxus",
+        "recurso": "Furia",
+        "lineas": ["Top"],
+        "roles": ["Luchador"],
+        "dificultad_uso": "Moderada"
+      },{
+        "id": 122,
+        "nombre": "Udyr",
+        "imagen": "https://example.com/images/udyr.png",
+        "origen": "Freljord",
+        "recurso": "Maná",
+        "lineas": ["Jungla", "Top"],
+        "roles": ["Luchador", "Tanque"],
+        "dificultad_uso": "Moderada"
+      },
+      {
+        "id": 123,
+        "nombre": "Urgot",
+        "imagen": "https://example.com/images/urgot.png",
+        "origen": "Noxus",
+        "recurso": "Maná",
+        "lineas": ["Top"],
+        "roles": ["Luchador"],
+        "dificultad_uso": "Moderada"
+      },
+      {
+        "id": 124,
+        "nombre": "Varus",
+        "imagen": "https://example.com/images/varus.png",
+        "origen": "Varus",
+        "recurso": "Maná",
+        "lineas": ["Bot"],
+        "roles": ["Tirador", "Mago"],
+        "dificultad_uso": "Moderada"
+      },
+      {
+        "id": 125,
+        "nombre": "Vayne",
+        "imagen": "https://example.com/images/vayne.png",
+        "origen": "Demacia",
+        "recurso": "Maná",
+        "lineas": ["Bot"],
+        "roles": ["Tirador"],
+        "dificultad_uso": "Alta"
+      },
+      {
+        "id": 126,
+        "nombre": "Veigar",
+        "imagen": "https://example.com/images/veigar.png",
+        "origen": "Bandle City",
+        "recurso": "Maná",
+        "lineas": ["Mid"],
+        "roles": ["Mago"],
+        "dificultad_uso": "Moderada"
+      },
+      {
+        "id": 127,
+        "nombre": "Vel'Koz",
+        "imagen": "https://example.com/images/velkoz.png",
+        "origen": "El Vacío",
+        "recurso": "Maná",
+        "lineas": ["Mid"],
+        "roles": ["Mago"],
+        "dificultad_uso": "Moderada"
+      },
+      {
+        "id": 128,
+        "nombre": "Vi",
+        "imagen": "https://example.com/images/vi.png",
+        "origen": "Piltover",
+        "recurso": "Maná",
+        "lineas": ["Jungla"],
+        "roles": ["Luchador"],
+        "dificultad_uso": "Moderada"
+      },
+      {
+        "id": 129,
+        "nombre": "Viktor",
+        "imagen": "https://example.com/images/viktor.png",
+        "origen": "Piltover",
+        "recurso": "Maná",
+        "lineas": ["Mid"],
+        "roles": ["Mago"],
+        "dificultad_uso": "Moderada"
+      },
+      {
+        "id": 130,
+        "nombre": "Vladimir",
+        "imagen": "https://example.com/images/vladimir.png",
+        "origen": "Noxus",
+        "recurso": "Maná",
+        "lineas": ["Mid"],
+        "roles": ["Mago"],
+        "dificultad_uso": "Moderada"
+      },
+      {
+        "id": 131,
+        "nombre": "Volibear",
+        "imagen": "https://example.com/images/volibear.png",
+        "origen": "Freljord",
+        "recurso": "Maná",
+        "lineas": ["Top", "Jungla"],
+        "roles": ["Tanque", "Luchador"],
+        "dificultad_uso": "Fácil"
+      }, {
+        "id": 132,
+        "nombre": "Wukong",
+        "imagen": "https://example.com/images/wukong.png",
+        "origen": "Ionia",
+        "recurso": "Maná",
+        "lineas": ["Top", "Jungla"],
+        "roles": ["Luchador", "Asesino"],
+        "dificultad_uso": "Moderada"
+      },
+      {
+        "id": 133,
+        "nombre": "Xayah",
+        "imagen": "https://example.com/images/xayah.png",
+        "origen": "Jonia",
+        "recurso": "Maná",
+        "lineas": ["Bot"],
+        "roles": ["Tirador"],
+        "dificultad_uso": "Moderada"
+      },
+      {
+        "id": 134,
+        "nombre": "Xerath",
+        "imagen": "https://example.com/images/xerath.png",
+        "origen": "Shurima",
+        "recurso": "Maná",
+        "lineas": ["Mid"],
+        "roles": ["Mago"],
+        "dificultad_uso": "Moderada"
+      },
+      {
+        "id": 135,
+        "nombre": "Yasuo",
+        "imagen": "https://example.com/images/yasuo.png",
+        "origen": "Ionia",
+        "recurso": "Flujo de energía",
+        "lineas": ["Mid", "Top"],
+        "roles": ["Luchador", "Asesino"],
+        "dificultad_uso": "Alta"
+      },
+      {
+        "id": 136,
+        "nombre": "Yone",
+        "imagen": "https://example.com/images/yone.png",
+        "origen": "Ionia",
+        "recurso": "Maná",
+        "lineas": ["Mid", "Top"],
+        "roles": ["Luchador", "Asesino"],
+        "dificultad_uso": "Alta"
+      },
+      {
+        "id": 137,
+        "nombre": "Zac",
+        "imagen": "https://example.com/images/zac.png",
+        "origen": "Zaun",
+        "recurso": "Maná",
+        "lineas": ["Jungla"],
+        "roles": ["Tanque"],
+        "dificultad_uso": "Moderada"
+      },
+      {
+        "id": 138,
+        "nombre": "Zed",
+        "imagen": "https://example.com/images/zed.png",
+        "origen": "Ionia",
+        "recurso": "Maná",
+        "lineas": ["Mid"],
+        "roles": ["Asesino"],
+        "dificultad_uso": "Alta"
+      },
+      {
+        "id": 139,
+        "nombre": "Zeri",
+        "imagen": "https://example.com/images/zeri.png",
+        "origen": "Zaun",
+        "recurso": "Maná",
+        "lineas": ["Bot"],
+        "roles": ["Tirador"],
+        "dificultad_uso": "Moderada"
+      },
+      {
+        "id": 140,
+        "nombre": "Zyra",
+        "imagen": "https://example.com/images/zyra.png",
+        "origen": "Ixtal",
+        "recurso": "Maná",
+        "lineas": ["Mid", "Soporte"],
+        "roles": ["Mago", "Soporte"],
+        "dificultad_uso": "Moderada"
+      }
+    ]
+  }
