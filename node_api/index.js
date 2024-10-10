@@ -52,6 +52,46 @@ app.get("/api/champions/dificultad/:dificultad", (req, res) => {
     const championsPorDificultad = champions.filter(c => c.dificultad_uso.toLowerCase() === dificultad);
     res.json(championsPorDificultad);
 });
+// Obtener campeones por región
+app.get("/api/champions/region/:region", (req, res) => {
+    const region = req.params.region.toLowerCase();
+    const championsPorRegion = champions.filter(c => c.region.toLowerCase() === region);
+    res.json(championsPorRegion);
+});
+
+// Obtener campeones por tipo de daño
+app.get("/api/champions/tipo-dano/:tipoDano", (req, res) => {
+    const tipoDano = req.params.tipoDano.toLowerCase();
+    const championsPorTipoDano = champions.filter(c => c.tipo_dano.toLowerCase() === tipoDano);
+    res.json(championsPorTipoDano);
+});
+
+// Obtener campeones por recurso
+app.get("/api/champions/recurso/:recurso", (req, res) => {
+    const recurso = req.params.recurso.toLowerCase();
+    const championsPorRecurso = champions.filter(c => c.recurso.toLowerCase() === recurso);
+    res.json(championsPorRecurso);
+});
+
+// Obtener campeones por rango de ataque
+app.get("/api/champions/rango-ataque/:rangoAtaque", (req, res) => {
+    const rangoAtaque = req.params.rangoAtaque.toLowerCase();
+    const championsPorRangoAtaque = champions.filter(c => c.rango_ataque.toLowerCase() === rangoAtaque);
+    res.json(championsPorRangoAtaque);
+});
+
+// Obtener campeones por año de lanzamiento
+app.get("/api/champions/año-lanzamiento/:año", (req, res) => {
+    const año = parseInt(req.params.año);
+    const championsPorAño = champions.filter(c => new Date(c.fecha_lanzamiento).getFullYear() === ano);
+    res.json(championsPorAño);
+});
+// Obtener campeones por imagen
+app.get("/api/champions/imagen/:imagen", (req, res) => {
+    const imagen = req.params.imagen.toLowerCase();
+    const championsPorImagen = champions.filter(c => c.imagen.toLowerCase().includes(imagen));
+    res.json(championsPorImagen);
+});
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {

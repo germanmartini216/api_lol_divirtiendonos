@@ -11,6 +11,7 @@
   <title>API LOL</title>
 </head>
 
+
 <body>
   <h1 class="none">LoL - Champions</h1>
 
@@ -18,11 +19,96 @@
     <div class="parallax"><img src="assets/background.jpg" alt="Fondo de League of Legends"></div>
 
     <div class="title-container valign-wrapper center-align bg">
-      <h2 class="title amber-text accent-4">Elige tu <br><strong>CAMPEÓN</strong></h2>
+      <h2 class="title amber-text accent-4">Utilizá tu <br><strong>CAMPEÓN</strong></h2>
       <div class="linea1"></div>
       <div class="linea2"></div>
     </div>
   </div>
+
+
+  <nav class="amber darken-4">
+    <div class="nav-wrapper container">
+      <a href="#" class="brand-logo">API LOL</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="#descripcion">Descripción</a></li>
+        <li><a href="#rutas">Rutas API</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <section id="descripcion" class="section">
+      <h3 class="amber-text text-darken-4">Descripción de la Aplicación</h3>
+      <p class="flow-text">
+        Nuestra aplicación de League of Legends (LoL) proporciona información detallada sobre los campeones del juego. 
+        Utilizando una API REST, los usuarios pueden acceder a datos como nombres, roles, habilidades y estadísticas de los campeones.
+        Esta herramienta es ideal para jugadores que buscan mejorar su conocimiento del juego y estrategias.
+      </p>
+    </section>
+
+    <section id="rutas" class="section">
+      <h3 class="amber-text text-darken-4">Rutas de la API</h3>
+      <table class="striped responsive-table purple-text">
+        <thead >
+          <tr>
+              <th>Ruta</th>
+              <th>Descripción</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>/api/champions</td>
+            <td>Obtiene todos los campeones</td>
+          </tr>
+          <tr>
+            <td>/api/champions/:id</td>
+            <td>Obtiene un campeón específico por ID</td>
+          </tr>
+          <tr>
+            <td>/api/champions/linea/:linea</td>
+            <td>Filtra campeones por línea de juego</td>
+          </tr>
+          <tr>
+            <td>/api/champions/rol/:rol</td>
+            <td>Filtra campeones por rol</td>
+          </tr>
+          <tr>
+            <td>/api/champions/dificultad/:dificultad</td>
+            <td>Filtra campeones por nivel de dificultad</td>
+          </tr>
+          <tr>
+            <td>/api/champions/region/:region</td>
+            <td>Filtra campeones por región de origen</td>
+          </tr>
+          <tr>
+            <td>/api/champions/habilidad/:habilidad</td>
+            <td>Filtra campeones por habilidad</td>
+          </tr>
+          <tr>
+            <td>/api/champions/tipo-dano/:tipoDano</td>
+            <td>Filtra campeones por tipo de daño</td>
+          </tr>
+          <tr>
+            <td>/api/champions/recurso/:recurso</td>
+            <td>Filtra campeones por tipo de recurso</td>
+          </tr>
+          <tr>
+            <td>/api/champions/rango-ataque/:rangoAtaque</td>
+            <td>Filtra campeones por rango de ataque</td>
+          </tr>
+          <tr>
+            <td>/api/champions/año-lanzamiento/:año</td>
+            <td>Filtra campeones por año de lanzamiento</td>
+          </tr>
+          <tr>
+            <td>/api/champions/imagen/:imagen</td>
+            <td>Filtra campeones por imagen</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </div>
+
 
   <section class="section container">
     <div>
