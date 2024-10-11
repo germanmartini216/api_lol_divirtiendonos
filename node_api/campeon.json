@@ -647,16 +647,6 @@
       "dificultad_uso": "Moderada"
     },
     {
-      "id": 66,
-      "nombre": "Lillia",
-      "imagen": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lillia_0.jpg",
-      "origen": "Ionia",
-      "recurso": "Maná",
-      "lineas": ["Jungla"],
-      "roles": ["Luchador", "Mago"],
-      "dificultad_uso": "Alta"
-    },
-    {
       "id": 67,
       "nombre": "Lissandra",
       "imagen": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/036bd75b51eb3ca4c1bae0054642ee2af5543b8a-496x560.jpg?auto=format&fit=fill&q=80&w=308",
@@ -994,15 +984,6 @@
       "dificultad_uso": "Alta"
     },
     {
-      "id": 101,
-      "nombre": "Samira",
-      "imagen": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Samira_0.jpg",
-      "origen": "Shurima",
-      "recurso": "Maná",
-      "lineas": ["Bot"],
-      "roles": ["Tirador", "Asesino"],
-      "dificultad_uso": "Moderada"
-    },{
       "id": 102,
       "nombre": "Sejuani",
       "imagen": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/3d0c94dabcda10df81fac647ad5fda6cf16b1a42-496x560.jpg?auto=format&fit=fill&q=80&w=308",
@@ -1020,26 +1001,6 @@
       "recurso": "Maná",
       "lineas": ["Bot"],
       "roles": ["Tirador", "Soporte"],
-      "dificultad_uso": "Moderada"
-    },
-    {
-      "id": 104,
-      "nombre": "Seraphine",
-      "imagen": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Seraphine_0.jpg",
-      "origen": "Piltover",
-      "recurso": "Maná",
-      "lineas": ["Mid", "Soporte"],
-      "roles": ["Mago", "Soporte"],
-      "dificultad_uso": "Fácil"
-    },
-    {
-      "id": 105,
-      "nombre": "Sett",
-      "imagen": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sett_0.jpg",
-      "origen": "Ionia",
-      "recurso": "Maná",
-      "lineas": ["Top", "Jungla"],
-      "roles": ["Luchador", "Tanque"],
       "dificultad_uso": "Moderada"
     },
     {
@@ -1291,15 +1252,6 @@
       "dificultad_uso": "Moderada"
     },
     {
-      "id": 131,
-      "nombre": "Volibear",
-      "imagen": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Volibear_0.jpg",
-      "origen": "Freljord",
-      "recurso": "Maná",
-      "lineas": ["Top", "Jungla"],
-      "roles": ["Tanque", "Luchador"],
-      "dificultad_uso": "Fácil"
-    }, {
       "id": 132,
       "nombre": "Wukong",
       "imagen": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/769013a96f93d25ba79f5c9c9c2ee2caf7160a04-496x560.jpg?auto=format&fit=fill&q=80&w=308",
@@ -1335,16 +1287,6 @@
       "imagen": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/bdbed4e6ca66f10b86f4dbc41db2d5c066ab9168-496x560.jpg?auto=format&fit=fill&q=80&w=308",
       "origen": "Ionia",
       "recurso": "Flujo de energía",
-      "lineas": ["Mid", "Top"],
-      "roles": ["Luchador", "Asesino"],
-      "dificultad_uso": "Alta"
-    },
-    {
-      "id": 136,
-      "nombre": "Yone",
-      "imagen": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yone_0.jpg",
-      "origen": "Ionia",
-      "recurso": "Maná",
       "lineas": ["Mid", "Top"],
       "roles": ["Luchador", "Asesino"],
       "dificultad_uso": "Alta"

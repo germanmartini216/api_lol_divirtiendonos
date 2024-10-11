@@ -81,3 +81,16 @@
       background-color: rgba(223, 192, 17, 0.986);
       margin: 5px 0px;
   }
+  
+  .fixed-action-btn-right {
+    position: fixed;
+    right: -60px; /* Inicialmente fuera de la vista */
+    bottom: 20px;
+    z-index: 1000;
+    display: none; /* Oculta el botón por defecto */
+    transition: right 0.3s ease-in-out; /* Transición suave */
+  }
+
+  .fixed-action-btn-right.show {
+    right: 20px; /* Posición final cuando se muestra */
+  }
