@@ -3,6 +3,7 @@ import { obtenerTodosLosUsuarios, obtenerUsuarioPorId, crearUsuario, iniciarSesi
 import dotenv from "dotenv";
 import jwt from "jsonwebtoken";
 
+
 dotenv.config();
 
 const claveSecreta = process.env.SECRET;

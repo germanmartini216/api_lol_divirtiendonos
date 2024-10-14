@@ -16,4 +16,5 @@ const writeUsersFile = (data) => {
     fs.writeFileSync(usersFilePath, JSON.stringify(data, null, 2));
 }
 
-export { readUsersFile, writeUsersFile };
+// Exporta un objeto con las funciones
+export default { readUsersFile, writeUsersFile };
