@@ -22,7 +22,6 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-  
   }
   
   .valign-wrapper {
@@ -36,7 +35,7 @@
   }
   
   .title {
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.432); /* Sombra negra con transparencia */
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.432);
   }
   
   .card {
@@ -84,13 +83,29 @@
   
   .fixed-action-btn-right {
     position: fixed;
-    right: -60px; /* Inicialmente fuera de la vista */
+    right: -60px;
     bottom: 20px;
     z-index: 1000;
-    display: none; /* Oculta el botón por defecto */
-    transition: right 0.3s ease-in-out; /* Transición suave */
+    display: none;
+    transition: right 0.3s ease-in-out;
   }
 
   .fixed-action-btn-right.show {
-    right: 20px; /* Posición final cuando se muestra */
+    right: 20px;
   }
+
+  .collapsible-header {
+    background-color: #ffab00 !important;
+    border-bottom: 1px solid #ffab00 !important;
+  }
+
+  .collapsible {
+    border-top: 1px solid #ffab00;
+    border-right: 1px solid #ffab00;
+    border-left: 1px solid #ffab00;
+    margin: .5rem 0 1rem 0;
+}
+
+.collapsible-body {
+  border-bottom: 1px solid #ffab00;
+}

@@ -27,22 +27,16 @@ const autenticar = (req, res, next) => {
     }
 };
 
-// Obtener todos los usuarios
 router.get('/', autenticar, obtenerTodosLosUsuarios);
 
-// Obtener usuario por ID
 router.get('/:id', autenticar, obtenerUsuarioPorId);
 
-// Crear usuario
 router.post('/registro', crearUsuario);
 
-// Iniciar sesión
 router.post('/login', iniciarSesion);
 
-// Actualizar usuario
 router.put('/:id', autenticar, actualizarUsuario);
 
-// Eliminar usuario
 router.delete('/:id', autenticar, eliminarUsuario);
 
 export default router;

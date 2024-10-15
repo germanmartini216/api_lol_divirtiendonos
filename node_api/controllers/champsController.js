@@ -2,28 +2,26 @@ import Champions from "../models/lolModel.js";
 import { validateChamp, validateUpdateChamp } from "../validations/validation.js";
 
 export const obtenerTodosLosChamps = async (req, res) => {
-    const limitParam = parseInt(req.params.limit); // Obtener límite desde la ruta si está presente
-    const page = parseInt(req.query.page) || 1; // Obtener parámetros de paginación
+    const limitParam = parseInt(req.params.limit);
+    const page = parseInt(req.query.page) || 1;
 
     try {
         let champs;
         if (isNaN(limitParam)) {
-            // Si no se proporciona un límite, obtener todos los campeones
             champs = await Champions.find();
             res.json({
                 champs,
-                totalPages: 1, // Solo una página si se muestran todos
+                totalPages: 1,
                 currentPage: 1
             });
         } else {
-            // Si se proporciona un límite, obtener campeones con paginación
             champs = await Champions.find()
-                .limit(limitParam) // Limitar la cantidad de campeones
-                .skip((page - 1) * limitParam); // Saltar los campeones de las páginas anteriores
-            const count = await Champions.countDocuments(); // Contar el total de campeones
+                .limit(limitParam)
+                .skip((page - 1) * limitParam);
+            const count = await Champions.countDocuments();
             res.json({
                 champs,
-                totalPages: Math.ceil(count / limitParam), // Calcular el total de páginas
+                totalPages: Math.ceil(count / limitParam),
                 currentPage: page
             });
         }
@@ -76,7 +74,6 @@ export const deleteChamp = async (req, res) => {
     }
 };
 
-// Filtrar campeones por línea
 export const filtrarChampsPorLinea = async (req, res) => {
     try {
         const linea = req.params.linea;
@@ -88,7 +85,6 @@ export const filtrarChampsPorLinea = async (req, res) => {
     }
 };
 
-// Filtrar campeones por recurso
 export const filtrarChampsPorRecurso = async (req, res) => {
     try {
         const recurso = req.params.recurso;
@@ -100,7 +96,6 @@ export const filtrarChampsPorRecurso = async (req, res) => {
     }
 };
 
-// Filtrar campeones por origen
 export const filtrarChampsPorOrigen = async (req, res) => {
     try {
         const origen = req.params.origen;
@@ -112,7 +107,6 @@ export const filtrarChampsPorOrigen = async (req, res) => {
     }
 };
 
-// Filtrar campeones por rol
 export const filtrarChampsPorRol = async (req, res) => {
     try {
         const rol = req.params.rol;
@@ -124,7 +118,6 @@ export const filtrarChampsPorRol = async (req, res) => {
     }
 };
 
-// Filtrar campeones por dificultad
 export const filtrarChampsPorDificultad = async (req, res) => {
     try {
         const dificultad = req.params.dificultad_uso;
@@ -136,11 +129,10 @@ export const filtrarChampsPorDificultad = async (req, res) => {
     }
 };
 
-// Filtrar campeones por nombre
 export const filtrarChampsPorNombre = async (req, res) => {
     try {
         const nombre = req.params.nombre;
-        const champs = await Champions.find({ nombre: { $regex: nombre, $options: 'i' } }); // Búsqueda insensible a mayúsculas
+        const champs = await Champions.find({ nombre: { $regex: nombre, $options: 'i' } });
         res.json(champs);
     } catch (error) {
         console.error('Error al filtrar campeones por nombre:', error);
@@ -148,7 +140,6 @@ export const filtrarChampsPorNombre = async (req, res) => {
     }
 };
 
-// Crear un nuevo campeón
 export const crearChamp = async (req, res) => {
     const { error } = validateChamp(req.body);
     if (error) {

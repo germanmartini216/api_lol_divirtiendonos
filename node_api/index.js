@@ -6,7 +6,6 @@ import dotenv from 'dotenv';
 import champsRoutes from './routes/champsRoutes.js';
 import usersRoutes from './routes/usersRoute.js';
 
-
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
@@ -19,17 +18,11 @@ mongoose.connect(process.env.MONGO_URI)
 const app = express();
 app.use(express.json());
 
-// Servir archivos estáticos desde la carpeta 'public'
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Importar las rutas
-
-
-// Usar las rutas
 app.use('/api/champions', champsRoutes);
 app.use('/api/users', usersRoutes);
 
-// Ruta principal que sirve index.html
 app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });

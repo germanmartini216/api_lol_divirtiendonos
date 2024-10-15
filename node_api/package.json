@@ -1,6 +1,6 @@
 {
   "name": "api_proyecto",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "type": "module",
@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon index.js"
   },
-  "author": "",
+  "author": "German Martini, Lucio Boxall",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.1.1",

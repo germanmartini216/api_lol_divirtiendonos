@@ -4,36 +4,28 @@ filtrarChampsPorOrigen, filtrarChampsPorRol, filtrarChampsPorDificultad, filtrar
 
 const router = express.Router();
 
-// Ruta para crear un nuevo campeón
-router.post("/", crearChamp); // Crea un nuevo campeón
+router.post("/", crearChamp);
 
-// Ruta para obtener todos los campeones con paginación
-router.get("/", obtenerTodosLosChamps); // Obtiene todos los campeones
+router.get("/", obtenerTodosLosChamps);
 
-// Ruta para obtener campeones con un límite específico
-router.get("/:limit", obtenerTodosLosChamps); // Obtiene campeones con un límite específico
+router.get("/:limit", obtenerTodosLosChamps);
 
-// Ruta para filtrar campeones por línea
-router.get("/linea/:linea", filtrarChampsPorLinea); // Filtra campeones por línea
+router.get("/linea/:linea", filtrarChampsPorLinea);
 
-router.get("/recurso/:recurso", filtrarChampsPorRecurso); // Filtra campeones por recurso
+router.get("/recurso/:recurso", filtrarChampsPorRecurso);
 
-router.get("/origen/:origen", filtrarChampsPorOrigen); // Filtra campeones por origen
+router.get("/origen/:origen", filtrarChampsPorOrigen);
 
-router.get("/roles/:rol", filtrarChampsPorRol); // Filtra campeones por rol
+router.get("/roles/:rol", filtrarChampsPorRol);
 
-router.get("/dificultad/:dificultad_uso", filtrarChampsPorDificultad); // Filtra campeones por dificultad de uso
+router.get("/dificultad/:dificultad_uso", filtrarChampsPorDificultad);
 
-router.get("/nombre/:nombre", filtrarChampsPorNombre); // Filtra campeones por nombre
+router.get("/nombre/:nombre", filtrarChampsPorNombre);
 
+router.put("/:id", updateChamp);
 
-// Ruta para actualizar un campeón por ID
-router.put("/:id", updateChamp); // Actualiza un campeón por ID
+router.delete("/:id", deleteChamp);
 
-// Ruta para eliminar un campeón por ID
-router.delete("/:id", deleteChamp); // Elimina un campeón por ID
-
-// Ruta para obtener un campeón por ID
-router.get("/:id", obtenerChampPorId); // Obtiene un campeón por ID
+router.get("/:id", obtenerChampPorId);
 
 export default router;

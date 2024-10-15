@@ -36,7 +36,6 @@ const crearUsuario = async (req, res) => {
 };
 
 const iniciarSesion = async (req, res) => {
-    // Implementa la lógica de inicio de sesión aquí
     res.status(501).json({ mensaje: "Función no implementada" });
 };
 
@@ -70,8 +69,6 @@ const eliminarUsuario = async (req, res) => {
         res.status(400).json({ error: error.message });
     }
 };
-
-// Implementa las demás funciones del controlador aquí
 
 export {
     obtenerTodosLosUsuarios,
