@@ -56,3 +56,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Añade más event listeners para los otros filtros
 });
+

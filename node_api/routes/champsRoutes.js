@@ -1,21 +1,36 @@
 import express from "express";
-import { obtenerTodosLosChamps, obtenerChampPorId, filtrarChampsPorLinea, updateChamp, deleteChamp } from "../controllers/champsController.js";
+import { obtenerTodosLosChamps, obtenerChampPorId, filtrarChampsPorLinea, updateChamp, deleteChamp, crearChamp, filtrarChampsPorRecurso, 
+filtrarChampsPorOrigen, filtrarChampsPorRol, filtrarChampsPorDificultad, filtrarChampsPorNombre } from "../controllers/champsController.js";
 
 const router = express.Router();
 
+// Ruta para crear un nuevo campeón
+router.post("/", crearChamp); // Crea un nuevo campeón
+
 // Ruta para obtener todos los campeones
-router.get("/", obtenerTodosLosChamps);
+router.get("/", obtenerTodosLosChamps); // Obtiene todos los campeones
 
-// Ruta para filtrar por línea
-router.get("/linea/:linea", filtrarChampsPorLinea);
+// Ruta para filtrar campeones por línea
+router.get("/linea/:linea", filtrarChampsPorLinea); // Filtra campeones por línea
 
-// Ruta para actualizar un campeón
-router.put("/", updateChamp);
-router.delete("/", deleteChamp);
+router.get("/recurso", filtrarChampsPorRecurso); // Filtra campeones por recurso
+
+router.get("/origen/:origen", filtrarChampsPorOrigen); // Filtra campeones por origen
+
+router.get("/roles/:rol", filtrarChampsPorRol); // Filtra campeones por rol
+
+router.get("/dificultad/:dificultad", filtrarChampsPorDificultad); // Filtra campeones por dificultad de uso
+
+router.get("/nombre/:nombre", filtrarChampsPorNombre); // Filtra campeones por nombre
 
 
-// Ruta para obtener un campeón por ID (debe ir al final)
-router.get("/:id", obtenerChampPorId);
+// Ruta para actualizar un campeón por ID
+router.put("/:id", updateChamp); // Actualiza un campeón por ID
 
+// Ruta para eliminar un campeón por ID
+router.delete("/:id", deleteChamp); // Elimina un campeón por ID
+
+// Ruta para obtener un campeón por ID
+router.get("/:id", obtenerChampPorId); // Obtiene un campeón por ID
 
 export default router;
