@@ -1,5 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
     const championsContainer = document.querySelector('#app .row');
+    const paginationContainer = document.querySelector('#pagination'); // Contenedor para la paginación
+
+    let currentPage = 1; // Página actual
+    const limit = 20; // Límite de campeones por página
 
     function createChampionCard(champion) {
         return `
@@ -21,14 +25,29 @@ document.addEventListener('DOMContentLoaded', function() {
         `;
     }
 
-    function loadChampions(url = '/api/champions') {
-        fetch(url)
+    function loadChampions(page = 1, limit = 20) {
+        fetch(`/api/champions/${limit}?page=${page}`)
             .then(response => response.json())
-            .then(champions => {
-                const championCards = champions.map(createChampionCard).join('');
+            .then(data => {
+                const championCards = data.champs.map(createChampionCard).join('');
                 championsContainer.innerHTML = championCards;
+                setupPagination(data.totalPages, page); // Configurar la paginación
             })
             .catch(error => console.error('Error:', error));
+    }
+
+    function setupPagination(totalPages, currentPage) {
+        paginationContainer.innerHTML = ''; // Limpiar contenedor de paginación
+        for (let i = 1; i <= totalPages; i++) {
+            const button = document.createElement('button');
+            button.innerText = i;
+            button.classList.add('pagination-button');
+            button.disabled = i === currentPage; // Deshabilitar botón de la página actual
+            button.addEventListener('click', () => {
+                loadChampions(i, limit); // Cargar campeones de la página seleccionada
+            });
+            paginationContainer.appendChild(button);
+        }
     }
 
     function loadChampion(id) {
@@ -48,12 +67,11 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelector('#filtroLinea').addEventListener('change', function(e) {
         const linea = e.target.value;
         if (linea) {
-            loadChampions(`/api/champions/linea/${linea}`);
+            loadChampions(1, limit); // Reiniciar a la primera página
         } else {
-            loadChampions();
+            loadChampions(1, limit);
         }
     });
 
     // Añade más event listeners para los otros filtros
 });
-

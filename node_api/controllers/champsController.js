@@ -2,12 +2,34 @@ import Champions from "../models/lolModel.js";
 import { validateChamp, validateUpdateChamp } from "../validations/validation.js";
 
 export const obtenerTodosLosChamps = async (req, res) => {
+    const limitParam = parseInt(req.params.limit); // Obtener límite desde la ruta si está presente
+    const page = parseInt(req.query.page) || 1; // Obtener parámetros de paginación
+
     try {
-        const champs = await Champions.find();
-        res.json(champs);
+        let champs;
+        if (isNaN(limitParam)) {
+            // Si no se proporciona un límite, obtener todos los campeones
+            champs = await Champions.find();
+            res.json({
+                champs,
+                totalPages: 1, // Solo una página si se muestran todos
+                currentPage: 1
+            });
+        } else {
+            // Si se proporciona un límite, obtener campeones con paginación
+            champs = await Champions.find()
+                .limit(limitParam) // Limitar la cantidad de campeones
+                .skip((page - 1) * limitParam); // Saltar los campeones de las páginas anteriores
+            const count = await Champions.countDocuments(); // Contar el total de campeones
+            res.json({
+                champs,
+                totalPages: Math.ceil(count / limitParam), // Calcular el total de páginas
+                currentPage: page
+            });
+        }
     } catch (error) {
         console.error('Error al obtener campeones:', error);
-        res.status(500).json({ error: 'Error interno del servidor' });
+        res.status(500).json({ error: 'Error interno del servidor', details: error.message });
     }
 };
 
@@ -70,7 +92,7 @@ export const filtrarChampsPorLinea = async (req, res) => {
 export const filtrarChampsPorRecurso = async (req, res) => {
     try {
         const recurso = req.params.recurso;
-        const champs = await Champions.find({ recursos: recurso });
+        const champs = await Champions.find({ recurso: recurso });
         res.json(champs);
     } catch (error) {
         console.error('Error al filtrar campeones por recurso:', error);
@@ -105,8 +127,8 @@ export const filtrarChampsPorRol = async (req, res) => {
 // Filtrar campeones por dificultad
 export const filtrarChampsPorDificultad = async (req, res) => {
     try {
-        const dificultad = req.params.dificultad;
-        const champs = await Champions.find({ dificultad: dificultad });
+        const dificultad = req.params.dificultad_uso;
+        const champs = await Champions.find({ dificultad_uso: dificultad });
         res.json(champs);
     } catch (error) {
         console.error('Error al filtrar campeones por dificultad:', error);

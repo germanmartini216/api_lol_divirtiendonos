@@ -58,42 +58,50 @@
         </thead>
         <tbody>
           <tr>
-            <td>/api/champions</td>
-            <td>Obtiene todos los campeones</td>
+              <td>/api/champions</td>
+              <td>Obtiene todos los campeones</td>
           </tr>
           <tr>
-            <td>/api/champions/:id</td>
-            <td>Obtiene un campeón específico por ID</td>
+              <td>/api/champions/:id</td>
+              <td>Obtiene un campeón específico por ID</td>
           </tr>
           <tr>
-            <td>/api/champions/linea/:linea</td>
-            <td>Filtra campeones por línea de juego</td>
+              <td>/api/champions/linea/:linea</td>
+              <td>Filtra campeones por línea de juego</td>
           </tr>
           <tr>
-            <td>/api/champions/rol/:rol</td>
-            <td>Filtra campeones por rol</td>
+              <td>/api/champions/recurso/:recurso</td>
+              <td>Filtra campeones por tipo de recurso</td>
           </tr>
           <tr>
-            <td>/api/champions/dificultad/:dificultad</td>
-            <td>Filtra campeones por nivel de dificultad</td>
+              <td>/api/champions/origen/:origen</td>
+              <td>Filtra campeones por origen</td>
           </tr>
           <tr>
-            <td>/api/champions/region/:region</td>
-            <td>Filtra campeones por región de origen</td>
+              <td>/api/champions/roles/:rol</td>
+              <td>Filtra campeones por rol</td>
           </tr>
           <tr>
-            <td>/api/champions/habilidad/:habilidad</td>
-            <td>Filtra campeones por habilidad</td>
+              <td>/api/champions/dificultad/:dificultad_uso</td>
+              <td>Filtra campeones por nivel de dificultad</td>
           </tr>
           <tr>
-            <td>/api/champions/recurso/:recurso</td>
-            <td>Filtra campeones por tipo de recurso</td>
+              <td>/api/champions/nombre/:nombre</td>
+              <td>Filtra campeones por nombre</td>
           </tr>
           <tr>
-            <td>/api/champions/imagen/:imagen</td>
-            <td>Filtra campeones por imagen</td>
+              <td>/api/champions</td>
+              <td>Crea un nuevo campeón (POST)</td>
           </tr>
-        </tbody>
+          <tr>
+              <td>/api/champions/:id</td>
+              <td>Actualiza un campeón por ID (PUT)</td>
+          </tr>
+          <tr>
+              <td>/api/champions/:id</td>
+              <td>Elimina un campeón por ID (DELETE)</td>
+          </tr>
+      </tbody>
       </table>
     </section>
   </div>
@@ -120,6 +128,7 @@
     <div class="row">
       <!-- Las tarjetas de campeones se generarán aquí dinámicamente -->
     </div>
+    <div id="pagination" class="pagination-container"></div>
   </section>
 
   <div class="fixed-action-btn-right">
