@@ -31,9 +31,22 @@ router.get('/', autenticar, obtenerTodosLosUsuarios);
 
 router.get('/:id', autenticar, obtenerUsuarioPorId);
 
-router.post('/registro', crearUsuario);
+router.post('/registro', autenticar, crearUsuario);
 
-router.post('/login', iniciarSesion);
+router.post('/login', async (req, res) => {
+    try {
+        const { username, password } = req.body;
+        const usuario = await usersModel.findOne({ username, password });
+        if (usuario) {
+            const token = jwt.sign({ id: usuario._id, email: usuario.username }, claveSecreta, { expiresIn: '1h' });
+            res.json({ mensaje: "Inicio de sesión exitoso", token });
+        } else {
+            res.status(401).json({ mensaje: "Credenciales incorrectas" });
+        }
+    } catch (error) {
+        res.status(400).json({ error: error.message });
+    }
+});
 
 router.put('/:id', autenticar, actualizarUsuario);
 

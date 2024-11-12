@@ -26,3 +26,37 @@ export const validateUpdateChamp = (data) => {
     return schema.validate(data);
 };
 
+export const validateUser = (data) => {
+    const schema = Joi.object({
+        username: Joi.string().required(),
+        password: Joi.string().required()
+    });
+    return schema.validate(data);
+};
+
+export const validateUpdateUser = (data) => {
+    const schema = Joi.object({
+        username: Joi.string(),
+        password: Joi.string()
+    });
+    return schema.validate(data);
+};
+
+export const validateMap = (data) => {
+    const schema = Joi.object({
+        nombre: Joi.string().required(),
+        linea: Joi.number().integer().required(),
+        jungla: Joi.boolean().required()
+    });
+    return schema.validate(data);
+};
+
+export const validateUpdateMap = (data) => {
+    const schema = Joi.object({
+        nombre: Joi.string(),
+        linea: Joi.number().integer(),
+        jungla: Joi.boolean()
+    });
+    return schema.validate(data);
+};
+

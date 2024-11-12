@@ -154,3 +154,25 @@ export const crearChamp = async (req, res) => {
         res.status(500).json({ error: 'Error interno del servidor' });
     }
 };
+
+export const ordenarChamps = async (req, res) => {
+    try {
+        const { campo, orden } = req.query; // campo: el campo por el cual ordenar, orden: asc o desc
+        if (!campo || !orden) {
+            return res.status(400).json({ error: 'Se requieren los parámetros "campo" y "orden".' });
+        }
+        
+        // Verifica si el campo es válido
+        const camposValidos = ['nombre', 'imagen', 'origen', 'recurso', 'dificultad_uso'];
+        if (!camposValidos.includes(campo)) {
+            return res.status(400).json({ error: `El campo "${campo}" no es válido para ordenar.` });
+        }
+
+        const sortOrder = orden === 'asc' ? 1 : -1;
+        const champs = await Champions.find().sort({ [campo]: sortOrder });
+        res.json(champs);
+    } catch (error) {
+        console.error('Error al ordenar campeones:', error);
+        res.status(500).json({ error: 'Error interno del servidor' });
+    }
+};

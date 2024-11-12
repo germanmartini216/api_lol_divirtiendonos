@@ -2,7 +2,7 @@ import usersModel from "../models/usersModels.js";
 
 const obtenerTodosLosUsuarios = async (req, res) => {
     try {
-        const usuarios = usersModel.readUsersFile();
+        const usuarios = await usersModel.find();
         res.json(usuarios);
     } catch (error) {
         res.status(400).json({ error: error.message });
@@ -11,8 +11,7 @@ const obtenerTodosLosUsuarios = async (req, res) => {
 
 const obtenerUsuarioPorId = async (req, res) => {
     try {
-        const usuarios = usersModel.readUsersFile();
-        const usuario = usuarios.find(u => u.id === parseInt(req.params.id));
+        const usuario = await usersModel.findById(req.params.id);
         if (usuario) {
             res.json(usuario);
         } else {
@@ -25,10 +24,9 @@ const obtenerUsuarioPorId = async (req, res) => {
 
 const crearUsuario = async (req, res) => {
     try {
-        const usuarios = usersModel.readUsersFile();
-        const nuevoUsuario = { ...req.body, id: usuarios.length + 1 };
-        usuarios.push(nuevoUsuario);
-        usersModel.writeUsersFile(usuarios);
+        const { username, password } = req.body;
+        const nuevoUsuario = new usersModel({ username, password });
+        await nuevoUsuario.save();
         res.status(201).json(nuevoUsuario);
     } catch (error) {
         res.status(400).json({ error: error.message });
@@ -36,17 +34,29 @@ const crearUsuario = async (req, res) => {
 };
 
 const iniciarSesion = async (req, res) => {
-    res.status(501).json({ mensaje: "Función no implementada" });
+    try {
+        const { username, password } = req.body;
+        const usuario = await usersModel.findOne({ username, password });
+        if (usuario) {
+            res.json({ mensaje: "Inicio de sesión exitoso" });
+        } else {
+            res.status(401).json({ mensaje: "Credenciales incorrectas" });
+        }
+    } catch (error) {
+        res.status(400).json({ error: error.message });
+    }
 };
 
 const actualizarUsuario = async (req, res) => {
     try {
-        const usuarios = usersModel.readUsersFile();
-        const index = usuarios.findIndex(u => u.id === parseInt(req.params.id));
-        if (index !== -1) {
-            usuarios[index] = { ...usuarios[index], ...req.body };
-            usersModel.writeUsersFile(usuarios);
-            res.json(usuarios[index]);
+        const { username, password } = req.body;
+        const usuarioActualizado = await usersModel.findByIdAndUpdate(
+            req.params.id,
+            { username, password },
+            { new: true }
+        );
+        if (usuarioActualizado) {
+            res.json(usuarioActualizado);
         } else {
             res.status(404).json({ mensaje: "Usuario no encontrado" });
         }
@@ -57,10 +67,8 @@ const actualizarUsuario = async (req, res) => {
 
 const eliminarUsuario = async (req, res) => {
     try {
-        let usuarios = usersModel.readUsersFile();
-        const usuariosFiltrados = usuarios.filter(u => u.id !== parseInt(req.params.id));
-        if (usuarios.length !== usuariosFiltrados.length) {
-            usersModel.writeUsersFile(usuariosFiltrados);
+        const usuarioEliminado = await usersModel.findByIdAndDelete(req.params.id);
+        if (usuarioEliminado) {
             res.json({ mensaje: "Usuario eliminado correctamente" });
         } else {
             res.status(404).json({ mensaje: "Usuario no encontrado" });

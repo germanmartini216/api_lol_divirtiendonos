@@ -5,6 +5,7 @@ import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import champsRoutes from './routes/champsRoutes.js';
 import usersRoutes from './routes/usersRoute.js';
+import mapsRoutes from './routes/mapsRoutes.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -22,6 +23,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/api/champions', champsRoutes);
 app.use('/api/users', usersRoutes);
+app.use('/api/mapas', mapsRoutes);
 
 app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'));
