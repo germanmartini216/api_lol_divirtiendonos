@@ -6,15 +6,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const scrollToTopButton = document.querySelector('.fixed-action-btn-right');
 
-    window.addEventListener('scroll', function() {
-        scrollToTopButton.classList.toggle('show', window.scrollY > 100);
-    });
-
-    scrollToTopButton.addEventListener('click', function(e) {
-        e.preventDefault();
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
+    if (scrollToTopButton) {
+        window.addEventListener('scroll', function() {
+            scrollToTopButton.classList.toggle('show', window.scrollY > 100);
         });
-    });
+
+        scrollToTopButton.addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    }
 });
